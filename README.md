@@ -15,6 +15,8 @@ This project is boilerplate for using zod and ErrorBoundary of react.
 - How to check Type safety in runtime with zod.
 - How to separate error logic and success logic in data fetching handler. (for SoC)
 
+<img heigh="300" src="./assets/flow.png">
+
 ## Setup
 
 ### 1. Setup packages
