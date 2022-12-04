@@ -1,18 +1,29 @@
+import { useEffect, useState } from 'react';
+
 import './App.css';
 
+import { getTodoList } from './lib/apis';
+import { Todo } from './components';
+
+import type { STodo } from './lib/schemas/todo';
+
 const App = () => {
+  const [todoList, setTodoList] = useState<STodo[]>([]);
+
+  const fetchTodoList = async () => {
+    const todoList = await getTodoList();
+    setTodoList(todoList);
+  };
+
+  useEffect(() => {
+    fetchTodoList();
+  }, []);
+
   return (
     <div className="App">
-      <div></div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {todoList.map((todo, index) => {
+        return <Todo key={`${index}-${todo.userId}-${todo.title}`} {...todo} />;
+      })}
     </div>
   );
 };

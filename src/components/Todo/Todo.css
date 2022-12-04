@@ -1,0 +1,8 @@
+.todo {
+  display: inline-flex;
+  padding: 3rem 5rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #fff;
+}
