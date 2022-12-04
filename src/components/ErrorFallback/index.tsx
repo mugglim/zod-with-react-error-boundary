@@ -3,10 +3,12 @@ import { ZodError } from 'zod';
 import type { ErrorFallbackProps } from './types';
 
 const ErrorFallback = ({ error }: ErrorFallbackProps) => {
-  console.log(error);
-
   if (error instanceof ZodError) {
     return <div>Schema error</div>;
+  }
+
+  if (error instanceof TypeError) {
+    return <div>TypeError</div>;
   }
 
   return (

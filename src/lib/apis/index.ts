@@ -11,8 +11,8 @@ const getTodoList = async () => {
     const response = await fetch(`${import.meta.env.VITE_BASE_URL}/todos`);
     const todoList = await response.json();
     return TodoListSchema.parse(todoList);
-  } catch (error: any) {
-    throw new Error(error);
+  } catch (error) {
+    throw new TypeError('Server Error');
   }
 };
 
