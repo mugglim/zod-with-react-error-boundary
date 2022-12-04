@@ -206,6 +206,13 @@
     "@babel/plugin-syntax-jsx" "^7.18.6"
     "@babel/types" "^7.19.0"
 
+"@babel/runtime@^7.14.8":
+  version "7.20.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.6.tgz#facf4879bfed9b5326326273a64220f099b0fce3"
+  integrity sha512-Q+8MqP7TiHMWzSfwiJwXCjyf4GYA4Dgw3emg/7xmwsdLJOZUp+nMqcOwOzzYheuM1rhDu8FSj2l0aoMygEuXuA==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/template@^7.18.10":
   version "7.18.10"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.18.10.tgz#6f9134835970d1dbf0835c0d100c9f38de0c5e71"
@@ -289,6 +296,21 @@
   dependencies:
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
+
+"@toss/error-boundary@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@toss/error-boundary/-/error-boundary-1.1.3.tgz#eca5a6b20212e4df02dad3efc8940c8c2172f9f3"
+  integrity sha512-5hVcHGKkMDSleW2B7wJLtzjhRZIY8EBXCidca0r7Ging4Ot2ND8dunQhtiWbgeqTPB4Tav7fWDxMrz2/Ncg4ww==
+  dependencies:
+    "@toss/utils" "^1.2.2"
+
+"@toss/utils@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@toss/utils/-/utils-1.2.2.tgz#a2f4b1358d497ca2adbddb8910c2995439dc2130"
+  integrity sha512-znklwhqbjT1cIpgp9CbVDvLmp1zRgWxycT7GVUHZLEdbtM03osSLqu+qkkmZKARhTNw9J8OAzayCVvk0e12yhg==
+  dependencies:
+    "@babel/runtime" "^7.14.8"
+    date-fns "^2.25.0"
 
 "@types/prop-types@*":
   version "15.7.5"
@@ -381,6 +403,11 @@ csstype@^3.0.2:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
   integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
+
+date-fns@^2.25.0:
+  version "2.29.3"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.29.3.tgz#27402d2fc67eb442b511b70bbdf98e6411cd68a8"
+  integrity sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==
 
 debug@^4.1.0:
   version "4.3.4"
@@ -653,6 +680,11 @@ react@^18.2.0:
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
   dependencies:
     loose-envify "^1.1.0"
+
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
 
 resolve@^1.22.1:
   version "1.22.1"
